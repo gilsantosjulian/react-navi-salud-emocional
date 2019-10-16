@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImgContainer, } from './styled';
-import logo from '../../../assets/images/logo.svg';
+import logo from '../../../assets/images/logo.png';
 
 const ID = 'logo';
 
