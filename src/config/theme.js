@@ -13,6 +13,6 @@ export const textColor = theme('mode', {
 });
 
 export const colors = {
-  primary: 'rgb(46, 65, 109)',
-  secondary: 'rgb(90, 191, 237)',
+  primary: '#231F20',
+  secondary: '#AD974F',
 };
