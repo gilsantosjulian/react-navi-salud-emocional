@@ -41,7 +41,7 @@ export const NavLink = Styled.li`
 export const Span = Styled.span`
   font-family: Open Sans;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   padding: .6em;
   
   &:hover {

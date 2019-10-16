@@ -4,7 +4,7 @@ import { backgroundColor, textColor, } from '../../../config/theme';
 export const Container = Styled.div`
   padding: .15em 28px;
   width: 100%;
-  min-height: 40px;
+  min-height: 55px;
   position: fixed;
   top: 0px;
   z-index: 1;
