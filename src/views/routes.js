@@ -11,27 +11,27 @@ import NotFound from './notFound/NotFound';
 // Define your routes
 const routes = mount({
   '/': route({
-    title: 'Home',
+    title: 'Inicio',
     getData: () => {},
     view: <Home />,
   }),
   '/home': route({
-    title: 'Home',
+    title: 'Inicio',
     getData: () => {},
     view: <Home />,
   }),
   '/about-us': route({
-    title: 'About Us',
+    title: 'Sobre Nosotros',
     getData: () => {},
     view: <About />,
   }),
   '/services': route({
-    title: 'Services',
+    title: 'Servicios',
     getData: () => {},
     view: <Services />,
   }),
   '/galery': route({
-    title: 'Galery',
+    title: 'Galería',
     getData: () => {},
     view: <Galery />,
   }),
@@ -41,7 +41,7 @@ const routes = mount({
     view: <Blog />,
   }),
   '/contact-us': route({
-    title: 'Contact Us',
+    title: 'Contáctanos',
     getData: () => {},
     view: <Contact />,
   }),

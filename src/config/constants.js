@@ -1,15 +1,15 @@
 export const items = [
   {
-    title: 'Home',
+    title: 'Inicio',
     href: '/home',
   },
   {
-    title: 'About',
+    title: 'Sobre Nosotros',
     href: '/about-us',
   },
   {
     dropdown: true,
-    title: 'Services',
+    title: 'Servicios',
     href: '/services',
     items: [
       {
@@ -23,7 +23,7 @@ export const items = [
     ],
   },
   {
-    title: 'Galery',
+    title: 'Galería',
     href: '/galery',
   },
   {
@@ -31,7 +31,7 @@ export const items = [
     href: '/blog',
   },
   {
-    title: 'Contact',
+    title: 'Contáctanos',
     href: '/contact-us',
   },
 ];
