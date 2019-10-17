@@ -15,22 +15,22 @@ const routes = mount({
     getData: () => {},
     view: <Home />,
   }),
-  '/home': route({
+  '/inicio': route({
     title: 'Inicio',
     getData: () => {},
     view: <Home />,
   }),
-  '/about-us': route({
+  '/sobre-nosotros': route({
     title: 'Sobre Nosotros',
     getData: () => {},
     view: <About />,
   }),
-  '/services': route({
+  '/servicios': route({
     title: 'Servicios',
     getData: () => {},
     view: <Services />,
   }),
-  '/galery': route({
+  '/galeria': route({
     title: 'Galería',
     getData: () => {},
     view: <Galery />,
@@ -40,7 +40,7 @@ const routes = mount({
     getData: () => {},
     view: <Blog />,
   }),
-  '/contact-us': route({
+  '/contacto': route({
     title: 'Contáctanos',
     getData: () => {},
     view: <Contact />,

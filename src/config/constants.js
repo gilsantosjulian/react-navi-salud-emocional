@@ -1,16 +1,16 @@
 export const items = [
   {
     title: 'Inicio',
-    href: '/home',
+    href: '/inicio',
   },
   {
     title: 'Sobre Nosotros',
-    href: '/about-us',
+    href: '/sobre-nosotros',
   },
   {
     dropdown: true,
     title: 'Servicios',
-    href: '/services',
+    href: '/servicios',
     items: [
       {
         name: 'Service One',
@@ -24,7 +24,7 @@ export const items = [
   },
   {
     title: 'Galería',
-    href: '/galery',
+    href: '/galeria',
   },
   {
     title: 'Blog',
@@ -32,6 +32,6 @@ export const items = [
   },
   {
     title: 'Contáctanos',
-    href: '/contact-us',
+    href: '/contacto',
   },
 ];
