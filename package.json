@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://gilsantosjulian.github.io/react-navi-app",
+  "main": "src/index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --config ./config/webpack.config.js",
+    "build": "webpack --config ./config/webpack.config.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write",
+    "lint": "eslint --debug 'src/**/*.{js,jsx}'",
+    "lint:write": "eslint --debug --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "navi": "^0.12.6",
     "prop-types": "^15.7.2",
@@ -31,18 +43,8 @@
     "prettier": "^1.17.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --config ./config/webpack.config.js",
-    "build": "webpack --config ./config/webpack.config.js",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prettier": "prettier --write",
-    "lint": "eslint --debug 'src/**/*.{js,jsx}'",
-    "lint:write": "eslint --debug --fix",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "webpack-dev-server": "^3.8.2",
+    "webpack-manifest-plugin": "^2.2.0"
   },
   "eslintConfig": {
     "extends": "react-app"
