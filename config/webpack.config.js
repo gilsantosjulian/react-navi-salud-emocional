@@ -1,14 +1,13 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-
-const indextInput = './src/index.html';
-const indexOutput = 'index.html';
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
       extensions: [
@@ -27,13 +26,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
+          loader: 'babel-loader'
         }
       },
       {
@@ -53,12 +49,20 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      filename: indexOutput,
-      template: indextInput,
-    })
+      pkg: require(path.resolve(__dirname, '../package.json')),
+      template: path.resolve(__dirname, '../public/index.html'),
+      filename: 'index.html'
+    }),
+    new ManifestPlugin({
+      fileName: 'manifest.json',
+      publicPath: path.resolve(__dirname, '../public'),
+    }),
   ],
   devServer: {
-    contentBase: './dist',
-    hot: true
+    historyApiFallback: true, // redirect all server requests to /index.html
+    contentBase: path.resolve(__dirname, '../dist'),
+    compress:true,
+    port: 8080,
+    open: true
   }
 };
