@@ -5,10 +5,10 @@ import './carousel.css';
 
 const content = [
   {
-    title: 'Vulputate Mollis Ultricies Fermentum Parturient',
-    description: 'Aenean eu leo quam. Pellentesque ornare.',
+    title: 'Siempre apoyando el proceso del adulto mayor',
+    description: '',
     button: 'Read More',
-    image: 'https://i.imgur.com/ZXBtVw7.jpg',
+    image: require('../../../assets/images/slider1.jpg'),
     user: 'Luan Gjokaj',
     userProfile: 'https://i.imgur.com/JSW6mEk.png',
   },
@@ -42,7 +42,6 @@ function Carousel() {
           <div className="inner">
             <h1>{article.title}</h1>
             <p>{article.description}</p>
-            <button>{article.button}</button>
           </div>
           <section>
             <img src={article.userProfile} alt={article.user} />
