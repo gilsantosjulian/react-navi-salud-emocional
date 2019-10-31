@@ -21,7 +21,7 @@ export const ToogleButton = Styled.div`
   cursor: pointer;
 
   &:hover {
-    color: #61dafb;
+    color: ${props => props.theme.colors.secondary};
   }
 
   ${({ close, }) => close
