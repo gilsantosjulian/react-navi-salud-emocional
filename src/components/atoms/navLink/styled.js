@@ -23,7 +23,7 @@ export const NavLink = Styled.li`
   .active span {
     transform: scale(0.95);
     opacity: 0.6;
-    color: ${props => props.theme.colors.secondary};
+    color: ${props => props.theme.colors.primary};
   }
 
   @media ${device.tablet} {  
