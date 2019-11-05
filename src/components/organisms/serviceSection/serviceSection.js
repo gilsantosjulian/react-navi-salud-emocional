@@ -1,9 +1,8 @@
 import React from 'react';
-import { H3, } from '../../atoms/h3Title';
+import ServiceCard from '../../molecules/serviceCard/ServiceCard';
 
-export default function ServiceCard() {
-  const text = 'Hola';
+export default function ServiceSection() {
   return (
-    <H3 text={text} />
+    <ServiceCard />
   );
 }

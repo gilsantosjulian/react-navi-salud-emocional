@@ -1,12 +1,18 @@
 import React from 'react';
-import { h3, } from './styled';
+import PropTypes from 'prop-types';
+import { H3, } from './styled';
 
-const ID = 'h3Title';
+const ID = 'h3';
 
-export default function H3Title({ text, }) {
+export default function H3Title(props) {
+  const { text, } = props; 
   return (
-    <h3 id={ID}>
-      {{ text, }}
-    </h3>
+    <H3 id={ID}>
+      { text }
+    </H3>
   );
 }
+
+H3Title.propTypes = {
+  text: PropTypes.string.isRequired,
+};
