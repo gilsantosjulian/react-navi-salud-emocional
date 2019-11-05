@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from '../../components/molecules/carousel/Carousel';
-import ServiceSection from '../../components/organisms/serviceSection/serviceSection';
+import ServiceSection from '../../components/organisms/serviceSection/ServiceSection';
 import './Home.css';
 
 function Home() {
