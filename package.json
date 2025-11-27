@@ -22,7 +22,7 @@
     "react-busy-indicator": "^1.0.0",
     "react-dom": "^16.8.6",
     "react-navi": "^0.12.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^4.2.0",
     "styled-theming": "^2.2.0"
   },
@@ -43,7 +43,7 @@
     "prettier": "^1.17.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2",
+    "webpack-dev-server": "^5.2.2",
     "webpack-manifest-plugin": "^2.2.0"
   },
   "eslintConfig": {
